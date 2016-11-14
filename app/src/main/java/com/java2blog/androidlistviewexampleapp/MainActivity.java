@@ -31,7 +31,7 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        Toast.makeText(this, "You have selected : " + listofCountries[position]+ " as country", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You have selected : " + listofCountries[position-1]+ " as country", Toast.LENGTH_LONG).show();
     }
 
 }
